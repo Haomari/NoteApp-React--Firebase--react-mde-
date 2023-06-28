@@ -52,6 +52,7 @@ export default function App() {
     await deleteDoc(docRef);
   }
 
+	const sortedNotes = notes.sort((a, b) => b.updatedAt - a.updatedAt);
 
 
   return (
